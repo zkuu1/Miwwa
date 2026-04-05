@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Miiwa | Modern Digital Solutions",
-  description: "Dibuat dengan Next.js, Tailwind CSS, dan shadcn/ui.",
+  title: "Miiwa | Editing Unit",
+  description: "Miiwa website information",
 };
 
 export default function RootLayout({
