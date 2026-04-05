@@ -48,7 +48,7 @@ export default function AdminUsersPage() {
     setSaving(true)
     const { error } = await supabase
       .from('users')
-      .update({ username: editUser.username, role: editUser.role })
+      .update({ username: editUser.username, email: editUser.email, role: editUser.role })
       .eq('id', editUser.id)
 
     if (error) toast.error('Gagal menyimpan perubahan')
@@ -161,6 +161,15 @@ export default function AdminUsersPage() {
               <Input
                 value={editUser?.username ?? ''}
                 onChange={(e) => setEditUser(prev => prev ? { ...prev, username: e.target.value } : prev)}
+                className="bg-white/5 border-white/10 rounded-xl h-11"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label>Email</Label>
+              <Input
+                type="email"
+                value={editUser?.email ?? ''}
+                onChange={(e) => setEditUser(prev => prev ? { ...prev, email: e.target.value } : prev)}
                 className="bg-white/5 border-white/10 rounded-xl h-11"
               />
             </div>
