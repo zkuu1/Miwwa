@@ -207,5 +207,10 @@ export const admins: Admin[] = [
         link: "https://www.instagram.com/mikatsu._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
     }
     ,
+     {
+        name: "Caliberg",
+        image: "/image/member/Cali.png",
+        link: "https://www.instagram.com/_caliberg.wrks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    }
     
 ]
